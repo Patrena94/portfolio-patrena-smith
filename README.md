@@ -1,4 +1,4 @@
-# the-casual-observer
+# portfolio-patrena-smith
  
 # License
    
@@ -27,6 +27,8 @@
  8.[Test](#Test)
 
  9.[Screenshots](#Screenshots)
+
+ 10.[Sources](#Sources)
 
  # Questions  
 
@@ -61,7 +63,10 @@ User interested in contributing to the project will need to create their own bra
 # Screenshots
 
 
+# Sources
 
+Cover Image: Photo by <a href="https://unsplash.com/@molnj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jocelyn Morales</a> on <a href="https://unsplash.com/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
 ❤️ Made with Love by Patrena, LLC. 2021
 ![Build Status](https://img.shields.io/github/languages/top/Patrena94/Smith-Corporation-Work-Scheduler)  
