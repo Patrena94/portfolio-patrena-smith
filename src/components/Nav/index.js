@@ -1,41 +1,44 @@
 import React from "react";
 import logo from "../../assets/logo/PADSlogo.png";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
-    const categories = [
-        {
-          name: "Portfolio",
-          description:
-            "body of work",
-        },
-        { name: "Resume", description: "Professional work Experience" },
-
-      ];
-    function categorySelected(name){
-        console.log(`${name}clicked`)
-    } 
+function Nav(props) {
+    const {
+      projects = [ ],
+      setCurrentProject,
+      currentProject,
+    }=props;
+  
+   const handleClick =(item) =>{
+     console.log(item);
+     return item;
+   };
+  
   return (
-    <header>
+    <header className="flex-row px-1">
      <h2>
          <img src={logo}/>
   </h2>
   <nav>
     <ul className="flex-row">
       <li className="mx-2">
-        <a href="#about">
+        <a data-testid="about" href="#about">
           About me
         </a>
       </li>
-      <li>
-        <span>Contact</span>
+      <li className={"mx-2"}>
+        <span onClick={() => handleClick('contact')}>Contact</span>
       </li>
-       {categories.map((category) => (
+       {Projects.map((project) => (
         <li
           className="mx-1"
-          key={category.name}
+          key={project.name}
         >
-          <span onClick={categorySelected} >
-            {category.name}
+          <span onClick={() => {
+            setCurrentProject(project);
+          }}
+          >
+            {capitalizeFirstLetter(project.name)}
           </span>
         </li>
       ))}
