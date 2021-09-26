@@ -66,6 +66,8 @@ User interested in contributing to the project will need to create their own bra
 # Sources
 
 Cover Image: Photo by <a href="https://unsplash.com/@molnj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jocelyn Morales</a> on <a href="https://unsplash.com/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Portfolio Individual Image photo by Photo by <a href="https://unsplash.com/@trinwin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Trinity Nguyen</a> on <a href="https://unsplash.com/t/business-work?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
   
 
 ❤️ Made with Love by Patrena, LLC. 2021
