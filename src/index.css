@@ -34,8 +34,8 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: #914875;
-  color: var(--light);
+  background: black ;
+  color: gold;
   font-family: 'Poiret One', cursive;
 
 }
@@ -92,11 +92,11 @@ a:hover {
 }
 
 header {
-  background: #914875;
+  background: black;
 }
 
 header a {
-  color: var(--light);
+  color: gold;
 }
 
 button {
@@ -293,6 +293,7 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
 
 
 body {

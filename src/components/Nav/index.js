@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo/PADSlogo.png";
 
 function Nav() {
     const categories = [
@@ -16,9 +17,7 @@ function Nav() {
   return (
     <header>
      <h2>
-    <a href="/">
-      <span role="img" aria-label="camera"> 📸</span> Oh Snap!
-    </a>
+         <img src={logo}/>
   </h2>
   <nav>
     <ul className="flex-row">
