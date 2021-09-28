@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo/PADSlogo.png";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import coverImage from "../../assets/cover/cover-image.jpg";
 
 function Nav(props) {
     const {
@@ -24,21 +25,27 @@ function Nav(props) {
     <ul className="flex-row">
       <li className="mx-2">
         <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-          About me
+          Profesional Summary
         </a>
       </li>
-      <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+      <li className="mx-2">
+          <a data-testid ="resume" href ="#resume" onClick={() => setContactSelected(false)}>Professional Experience</a>
+        </li>
+        <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
       </li>
         <li className="mx-2">
-        <a data-testid ="portfolio" href ="portfolio" onClick={() => setContactSelected(false)}>Portfolio</a>
-        </li>
-         <li className="mx-2">
-          <a data-testid ="resume" href ="resume" onClick={() => setContactSelected(false)}>Resume</a>
-        </li>
+        <a data-testid ="portfolio" href ="#portfolio" onClick={() => setContactSelected(false)}>Portfolio</a>
+        </li>   
     </ul>
   </nav>
-    </header>
+  <img
+        src={coverImage}
+        className="my-2"
+        style={{ width: "100%" }}
+        alt="cover"
+      />
+    </header> 
   );
 }
 

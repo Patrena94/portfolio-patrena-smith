@@ -1,10 +1,10 @@
 import React from "react";
-import coverImage from "../../assets/cover/cover-image.jpg";
+// import coverImage from "../../assets/cover/cover-image.jpg";
 function About() {
   
   return (
     <section className="my-5">
-      <h1 id="about">Who am I?</h1>
+      <h1 id="about">Professional Summary</h1>
       <p>
         Talented Public Relations Marketing Specialist who has proven excellence
         in all aspects of operations. Expert in establishing goals, implementing
@@ -15,12 +15,12 @@ function About() {
         measurable accolades. Talented coach who can teach others to exceed
         expectations consistently.{" "}
       </p>
-      <img
+      {/* <img
         src={coverImage}
         className="my-2"
         style={{ width: "100%" }}
         alt="cover"
-      />
+      /> */}
     </section>
   )
 }

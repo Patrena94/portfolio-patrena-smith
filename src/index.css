@@ -54,14 +54,21 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  color: #914875;
+  text-align: center;
 }
 
 h2 {
   font-size: 2rem;
+  color: #914875;
+  text-align: center;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.25
+  rem;
+  color:white;
+  font-weight: light;
 }
 
 h4 {
