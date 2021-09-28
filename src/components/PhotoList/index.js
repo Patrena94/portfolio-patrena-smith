@@ -1,4 +1,4 @@
-// import React from 'react';
+import Modal from '../Modal';
 import React, { useState } from 'react';
 
 const PhotoList =({ project }) => {
@@ -42,7 +42,7 @@ const [photos] =useState([
   {
     name: 'Email Regex',
     project: 'challenges',
-    description: 'An individual that possesses an on-line account know the importance of having their email address validated for access to accounts that may contain sensitive information. Thus, this is an important expression that a developer is required to build into the application, in order to protect their user personal contact information and financial information. As well as to ensure that communication with their users are being accessed by the appropriate individual.  Regex is an acronym for regular expressions. Regular expression is a string of characters that allows developer to establish patterns that assist in matching, locating and managing data. The regular expression that we will be evaluating in this tutorial is Email validation (/^([a-z0-9_.- ]+)@([ \da-z.-]+).([a-z.]{2,6})$/ ).',
+    description: 'An individual that possesses an on-line account know the importance of having their email address validated for access to accounts that may contain sensitive information. Thus, this is an important expression that a developer is required to build into the application, in order to protect their user personal contact information and financial information. As well as to ensure that communication with their users are being accessed by the appropriate individual.  Regex is an acronym for regular expressions. Regular expression is a string of characters that allows developer to establish patterns that assist in matching, locating and managing data. The regular expression that we will be evaluating in this tutorial is Email validation.',
   },
   {
     name: 'QKP',
@@ -93,7 +93,7 @@ const currentPhotos = photos.filter((photo) => photo.project === project);
       <div className="flex-row">
         {currentPhotos.map((image,i)=>(
           <img
-          src={require(`../../assests/small/${projec}/${i}.jpg`)}
+          src={require(`../../assets/small/${project}/${i}.jpg`).default}
           alt={image.name}
           className="img-thumbnail mx-1"
           key={image.name}/>

@@ -4,44 +4,38 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
     const {
-      projects = [ ],
+      projects = [],
       setCurrentProject,
+      contactSelected,
       currentProject,
-    }=props;
+      setContactSelected
+    } = props;
   
-   const handleClick =(item) =>{
-     console.log(item);
-     return item;
-   };
+    // useEffect(() => {
+    //   document.title = capitalizeFirstLetter(currentProject.name);
+    // }, [currentProject]);
   
   return (
     <header className="flex-row px-1">
      <h2>
-         <img src={logo}/>
+         <img alt="logo" src={logo}/>
   </h2>
   <nav>
     <ul className="flex-row">
       <li className="mx-2">
-        <a data-testid="about" href="#about">
+        <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
           About me
         </a>
       </li>
-      <li className={"mx-2"}>
-        <span onClick={() => handleClick('contact')}>Contact</span>
+      <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
       </li>
-       {Projects.map((project) => (
-        <li
-          className="mx-1"
-          key={project.name}
-        >
-          <span onClick={() => {
-            setCurrentProject(project);
-          }}
-          >
-            {capitalizeFirstLetter(project.name)}
-          </span>
+        <li className="mx-2">
+        <a data-testid ="portfolio" href ="portfolio" onClick={() => setContactSelected(false)}>Portfolio</a>
         </li>
-      ))}
+         <li className="mx-2">
+          <a data-testid ="resume" href ="resume" onClick={() => setContactSelected(false)}>Resume</a>
+        </li>
     </ul>
   </nav>
     </header>

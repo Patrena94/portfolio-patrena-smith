@@ -8,12 +8,9 @@ function Portfolio(props){
     const {currentProject}= props;
     return (
         <section>
-            <h1 data-testid="h1tag">{capitalizeFirstLetter(currentProject.name)}</h1>
+             <h1 data-testid="h1tag">{capitalizeFirstLetter(currentProject.name)}</h1>
             <p>{currentProject.description}</p>
-            <PhotoList category={currentProject.name}/>
-            {/* <div>
-             <img src={photo}/>
-            </div> */}
+            <PhotoList project={currentProject.name}/>
         </section>
     );
 }
