@@ -4,6 +4,9 @@ import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
+import Container from 'react-bootstrap';
+import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import Footer from "./components/Footer";
 
 function App() {
@@ -59,7 +62,7 @@ function App() {
         <ContactForm></ContactForm>
         )}     
       </main>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }

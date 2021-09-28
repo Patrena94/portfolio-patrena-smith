@@ -1,59 +1,30 @@
+import React from "react";
+// import Box from "react-bootstrap/Box";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { Navbar } from "react-bootstrap";
+// import socialmedia from "../../assets/socialmedia/145807.png";
+// import socialmedia from "../../assets/socialmedia/facebook_1312139.html;
+// import socialmedia from "../../assets/socialmedia/2111819.png";
+// import FooterLink from "react";
+// import Heading from "react";
 
-// import React from "react";
-// import {
-//   Box,
-//   Container,
-//   Row,
-//   Column,
-//   FooterLink,
-//   Heading,
-// } from "react";
-  
-// const Footer = () => {
-//   return (
-//     <Box>
-//       <h1 style={{ color: "gold", 
-//                    textAlign: "center", 
-//                    marginTop: "-50px" }}>
-//        Patrena A. Smith
-//       </h1>
-//       <Container>
-//         <Row>
-//           <Column>
-//             <Heading>Social Media</Heading>
-//             <FooterLink href="#">
-//               <i className="fab fa-facebook-f">
-//                 <span style={{ marginLeft: "10px" }}>
-//                   Facebook
-//                 </span>
-//               </i>
-//             </FooterLink>
-//             <FooterLink href="#">
-//               <i className="fab fa-instagram">
-//                 <span style={{ marginLeft: "10px" }}>
-//                   Instagram
-//                 </span>
-//               </i>
-//             </FooterLink>
-//             <FooterLink href="#">
-//               <i className="fab fa-twitter">
-//                 <span style={{ marginLeft: "10px" }}>
-//                   Twitter
-//                 </span>
-//               </i>
-//             </FooterLink>
-//             <FooterLink href="#">
-//               <i className="fab fa-youtube">
-//                 <span style={{ marginLeft: "10px" }}>
-//                   Youtube
-//                 </span>
-//               </i>
-//             </FooterLink>
-//           </Column>
-//         </Row>
-//       </Container>
-//     </Box>
-//   );
-// };
+function Footer() {
+  return (
+    <footer className="mt-5">
+      <Container className="p=0" fluid={true}>
+        <Row className="border-top justify-content-betweenp-3">
+          <Col className="p-0" md={3} sm={12}>
+          ❤️ Made with Love by Patrena A.D.Smith.
+          </Col>
+          <Col className="p-0 d-flex justify-content-end" md={3}>
+          &copy; 2021 Patrena A. D. Smith, LLC.
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+  );
+}
 
-// export default Footer;
+export default Footer;
